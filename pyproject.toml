@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "blackoil-framework"
+version = "0.7.0"
+description = "A staged fully implicit finite-volume framework for 1D, 2D and 3D black-oil reservoir simulation."
+authors = [{name = "Research Framework"}]
+requires-python = ">=3.10"
+dependencies = ["numpy", "scipy", "matplotlib", "pandas"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.optional-dependencies]
+ad = ["jax[cpu]"]
+visualization = ["pyvista"]
+
