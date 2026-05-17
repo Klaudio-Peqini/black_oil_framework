@@ -1,0 +1,15 @@
+Step 7 integrated full 3D black-oil example
+===========================================
+grid: 5 x 4 x 3 = 60 cells
+active cells: 59
+inactive cells: 1
+faults: 2
+wells: 3
+completions: 8
+accepted timesteps: 4
+final recovery factor: 8.984800e-02
+final oil material-balance relative error: 2.581106e-02
+final water material-balance relative error: -1.452432e-03
+final gas material-balance relative error: 2.677259e-02
+PVD time series: /mnt/data/bo_step7/black_oil_framework/outputs/example_14_step7_full_3d_black_oil/vtk_timeseries/step7_blackoil_state_series.pvd
+restart files: 2

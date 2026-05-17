@@ -1,0 +1,12 @@
+Step 6C 3D visualization/export summary
+=======================================
+grid: 30 x 18 x 7 = 3780 cells
+active cells: 3524
+time steps exported: 6
+PVD collection: /mnt/data/bo_step6c/black_oil_framework/outputs/example_13_step6c_3d_visualization/vtk_timeseries/blackoil_state_series.pvd
+static VTK: /mnt/data/bo_step6c/black_oil_framework/outputs/example_13_step6c_3d_visualization/reservoir_static_description.vtk
+trajectory VTK: /mnt/data/bo_step6c/black_oil_framework/outputs/example_13_step6c_3d_visualization/well_trajectories.vtk
+completion VTK: /mnt/data/bo_step6c/black_oil_framework/outputs/example_13_step6c_3d_visualization/well_completions_points.vtk
+total completions: 27
+diagnostics CSV: /mnt/data/bo_step6c/black_oil_framework/outputs/example_13_step6c_3d_visualization/state_diagnostics.csv
+NPZ archive: /mnt/data/bo_step6c/black_oil_framework/outputs/example_13_step6c_3d_visualization/blackoil_state_timeseries.npz

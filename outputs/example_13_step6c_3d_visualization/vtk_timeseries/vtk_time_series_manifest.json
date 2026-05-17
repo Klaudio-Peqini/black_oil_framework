@@ -1,0 +1,30 @@
+{
+  "prefix": "blackoil_state",
+  "n_steps": 6,
+  "datasets": [
+    {
+      "time": 0.0,
+      "file": "/mnt/data/bo_step6c/black_oil_framework/outputs/example_13_step6c_3d_visualization/vtk_timeseries/blackoil_state_00000.vtk"
+    },
+    {
+      "time": 5184000.0,
+      "file": "/mnt/data/bo_step6c/black_oil_framework/outputs/example_13_step6c_3d_visualization/vtk_timeseries/blackoil_state_00001.vtk"
+    },
+    {
+      "time": 15552000.0,
+      "file": "/mnt/data/bo_step6c/black_oil_framework/outputs/example_13_step6c_3d_visualization/vtk_timeseries/blackoil_state_00002.vtk"
+    },
+    {
+      "time": 31104000.0,
+      "file": "/mnt/data/bo_step6c/black_oil_framework/outputs/example_13_step6c_3d_visualization/vtk_timeseries/blackoil_state_00003.vtk"
+    },
+    {
+      "time": 62208000.0,
+      "file": "/mnt/data/bo_step6c/black_oil_framework/outputs/example_13_step6c_3d_visualization/vtk_timeseries/blackoil_state_00004.vtk"
+    },
+    {
+      "time": 93312000.0,
+      "file": "/mnt/data/bo_step6c/black_oil_framework/outputs/example_13_step6c_3d_visualization/vtk_timeseries/blackoil_state_00005.vtk"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<VTKFile type="Collection" version="0.1" byte_order="LittleEndian">
+  <Collection>
+    <DataSet timestep="0" group="" part="0" file="step7_blackoil_state_00000.vtk"/>
+    <DataSet timestep="432000" group="" part="0" file="step7_blackoil_state_00001.vtk"/>
+    <DataSet timestep="864000" group="" part="0" file="step7_blackoil_state_00002.vtk"/>
+    <DataSet timestep="1296000" group="" part="0" file="step7_blackoil_state_00003.vtk"/>
+    <DataSet timestep="1728000" group="" part="0" file="step7_blackoil_state_00004.vtk"/>
+  </Collection>
+</VTKFile>

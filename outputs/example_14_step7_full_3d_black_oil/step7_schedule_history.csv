@@ -1,0 +1,10 @@
+control,max_bhp,min_bhp,open_completions,status,target,time,type,well
+water_rate,35500000.0,nan,2,open,3.472222222222222e-05,0.0,injector,INJ_W
+liquid_rate,nan,12500000.0,3,open,-2.5462962962962965e-05,0.0,producer,PROD_E
+bhp,nan,11500000.0,3,open,17500000.0,0.0,producer,PROD_H
+water_rate,35500000.0,nan,2,open,3.472222222222222e-05,864000.0,injector,INJ_W
+liquid_rate,nan,12500000.0,3,open,-3.240740740740741e-05,864000.0,producer,PROD_E
+bhp,nan,11500000.0,3,open,17500000.0,864000.0,producer,PROD_H
+water_rate,35500000.0,nan,2,open,3.472222222222222e-05,1296000.0,injector,INJ_W
+liquid_rate,nan,12500000.0,3,open,-3.240740740740741e-05,1296000.0,producer,PROD_E
+bhp,nan,11500000.0,3,open,16500000.0,1296000.0,producer,PROD_H
