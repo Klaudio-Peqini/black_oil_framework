@@ -1,0 +1,8 @@
+time_days,well,cell,well_index,control,target,min_bhp_bar,max_bhp_bar,status,group
+0.0,INJ_SW,0,2.3e-15,water_rate,2.2,,345.0,open,INJECTORS
+0.0,PROD_NE,19,2.8e-15,total_rate,-3.0,145.0,,open,PRODUCERS
+0.8,PROD_SE,4,2.2e-15,liquid_rate,-1.4,145.0,,open,PRODUCERS
+1.2,INJ_NW,15,2e-15,water_rate,1.2,,350.0,open,INJECTORS
+1.6,PROD_NE,,,bhp,155.0,145.0,,open,PRODUCERS
+2.2,INJ_SW,,,water_rate,1.0,,335.0,open,INJECTORS
+2.6,PROD_SE,,,shut,,,,shut,PRODUCERS
