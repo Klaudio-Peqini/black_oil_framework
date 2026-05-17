@@ -228,10 +228,10 @@ python examples/02_two_phase_water_oil_fully_implicit.py
 
 This stage adds pressure-dependent PVT properties:
 
-- \(B_w(p)\);
-- \(B_o(p)\);
-- \(\mu_w(p)\);
-- \(\mu_o(p)\);
+- $B_w(p)$;
+- $B_o(p)$;
+- $\mu_w(p)$;
+- $\mu_o(p)$;
 - rock compressibility;
 - material-balance diagnostics.
 
@@ -317,7 +317,7 @@ python examples/08_live_oil_sparse_newton_krylov.py
 
 This stage generalizes the model to 2D structured grids with:
 
-- \(K_x\), \(K_y\) anisotropy;
+- $K_x$, $K_y$ anisotropy;
 - heterogeneous permeability;
 - no-flow and pressure boundaries;
 - 2D validation cases;
@@ -412,7 +412,7 @@ The black-oil model describes water, oil and gas phases. The main phase saturati
 S_w + S_o + S_g = 1.
 \]
 
-The primary pressure is oil pressure \(p_o\). The phase pressures are:
+The primary pressure is oil pressure $p_o$. The phase pressures are:
 
 \[
 p_w = p_o - p_{cow}(S_w),
@@ -428,7 +428,7 @@ The phase Darcy velocity is:
 \mathbf{u}_\alpha = -\mathbf{K}\frac{k_{r\alpha}}{\mu_\alpha}\left(\nabla p_\alpha - \rho_\alpha g \nabla D\right),
 \]
 
-where \(D\) is positive-downward depth.
+where $D$ is positive-downward depth.
 
 The component equations are:
 
