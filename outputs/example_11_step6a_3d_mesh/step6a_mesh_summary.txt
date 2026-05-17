@@ -1,0 +1,10 @@
+Step 6A structured 3D mesh summary
+===================================
+cells: 2304 (24 x 16 x 6)
+cell size: dx=30.000 m, dy=30.000 m, dz=6.000 m
+internal faces: 6288
+x/y/z transmissibilities: 2208/2160/1920
+total pore volume: 2.327102e+06 m3
+sparse black-oil Jacobian pattern: shape=(6912, 6912), nnz=133920
+corner-point bridge: coord=(425, 6), zcorn=18432, active=2304
+VTK file: /mnt/data/bo_step6A/black_oil_framework/outputs/example_11_step6a_3d_mesh/step6a_3d_mesh_state.vtk

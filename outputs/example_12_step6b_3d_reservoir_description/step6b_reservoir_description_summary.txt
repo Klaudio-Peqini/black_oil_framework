@@ -1,0 +1,14 @@
+Step 6B 3D reservoir-description summary
+========================================
+grid: 32 x 20 x 8 = 5120 cells
+active cells: 4832
+inactive cells: 288
+total active pore volume: 6.077956e+06 m3
+kx range: 20.171 to 500.867 mD
+faults: F_MAIN, F_LEAKY
+nonzero multiplier counts: {'x': 4548, 'y': 4584, 'z': 4208}
+raw transmissibilities: x=4960, y=4864, z=4480
+post-multiplier zeroed faces: x=412, y=280, z=272
+wells: PROD_A, INJ_A, PROD_H
+total completions: 31
+VTK: /mnt/data/bo_step6b_work/black_oil_framework/outputs/example_12_step6b_3d_reservoir_description/step6b_3d_reservoir_description.vtk
