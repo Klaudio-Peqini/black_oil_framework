@@ -435,28 +435,19 @@ The component equations are:
 ### Water
 
 $$
-\frac{\partial}{\partial t}\left(\phi\frac{S_w}{B_w}\right)
-+ \nabla\cdot\left(\frac{\mathbf{u}_w}{B_w}\right)
-= q_w.
+\frac{\partial}{\partial t}\left(\phi\frac{S_w}{B_w}\right) + \nabla\cdot\left(\frac{\mathbf{u}_w}{B_w}\right) = q_w.
 $$
 
 ### Oil
 
 $$
-\frac{\partial}{\partial t}\left(\phi\frac{S_o}{B_o}\right)
-+ \nabla\cdot\left(\frac{\mathbf{u}_o}{B_o}\right)
-= q_o.
+\frac{\partial}{\partial t}\left(\phi\frac{S_o}{B_o}\right) + \nabla\cdot\left(\frac{\mathbf{u}_o}{B_o}\right) = q_o.
 $$
 
 ### Gas component
 
 $$
-\frac{\partial}{\partial t}\left[
-\phi\left(R_s\frac{S_o}{B_o}+\frac{S_g}{B_g}\right)
-\right]
-+ \nabla\cdot\left[
-R_s\frac{\mathbf{u}_o}{B_o}+\frac{\mathbf{u}_g}{B_g}\right]
-= q_g.
+\frac{\partial}{\partial t}\left[ \phi\left(R_s\frac{S_o}{B_o}+\frac{S_g}{B_g}\right) \right] + \nabla\cdot\left[ R_s\frac{\mathbf{u}_o}{B_o}+\frac{\mathbf{u}_g}{B_g} \right] = q_g.
 $$
 
 The gas equation is conservative with respect to both dissolved gas and free gas.
@@ -498,10 +489,7 @@ finite volume in space + fully implicit time integration + Newton-Raphson nonlin
 For each component and cell:
 
 $$
-R_i^{n+1} =
-\frac{A_i^{n+1}-A_i^n}{\Delta t}
-+ \sum_j F_{ij}^{n+1}
-- Q_i^{n+1}.
+R_i^{n+1} = \frac{A_i^{n+1}-A_i^n}{\Delta t} + \sum_j F_{ij}^{n+1} - Q_i^{n+1}.
 $$
 
 The nonlinear system is:
