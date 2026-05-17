@@ -245,9 +245,9 @@ python examples/03_dead_oil_compressible.py
 
 This stage introduces the gas component and solution gas:
 
-\[
+$$
 \phi\left(R_s\frac{S_o}{B_o}+\frac{S_g}{B_g}\right).
-\]
+$$
 
 Main example:
 
@@ -408,25 +408,25 @@ python examples/14_full_3d_black_oil_integrated.py
 
 The black-oil model describes water, oil and gas phases. The main phase saturations satisfy:
 
-\[
+$$
 S_w + S_o + S_g = 1.
-\]
+$$
 
 The primary pressure is oil pressure $p_o$. The phase pressures are:
 
-\[
+$$
 p_w = p_o - p_{cow}(S_w),
-\]
+$$
 
-\[
+$$
 p_g = p_o + p_{cgo}(S_g).
-\]
+$$
 
 The phase Darcy velocity is:
 
-\[
+$$
 \mathbf{u}_\alpha = -\mathbf{K}\frac{k_{r\alpha}}{\mu_\alpha}\left(\nabla p_\alpha - \rho_\alpha g \nabla D\right),
-\]
+$$
 
 where $D$ is positive-downward depth.
 
@@ -434,30 +434,30 @@ The component equations are:
 
 ### Water
 
-\[
+$$
 \frac{\partial}{\partial t}\left(\phi\frac{S_w}{B_w}\right)
 + \nabla\cdot\left(\frac{\mathbf{u}_w}{B_w}\right)
 = q_w.
-\]
+$$
 
 ### Oil
 
-\[
+$$
 \frac{\partial}{\partial t}\left(\phi\frac{S_o}{B_o}\right)
 + \nabla\cdot\left(\frac{\mathbf{u}_o}{B_o}\right)
 = q_o.
-\]
+$$
 
 ### Gas component
 
-\[
+$$
 \frac{\partial}{\partial t}\left[
 \phi\left(R_s\frac{S_o}{B_o}+\frac{S_g}{B_g}\right)
 \right]
 + \nabla\cdot\left[
 R_s\frac{\mathbf{u}_o}{B_o}+\frac{\mathbf{u}_g}{B_g}\right]
 = q_g.
-\]
+$$
 
 The gas equation is conservative with respect to both dissolved gas and free gas.
 
@@ -467,21 +467,21 @@ The gas equation is conservative with respect to both dissolved gas and free gas
 
 The Step 7 simulator uses one pressure variable, one water saturation variable and one phase-state-dependent third variable per cell:
 
-\[
+$$
 (p_o, S_w, x).
-\]
+$$
 
 For undersaturated oil cells:
 
-\[
+$$
 S_g = 0, \qquad x=R_s.
-\]
+$$
 
 For saturated cells:
 
-\[
+$$
 S_g > 0, \qquad x=S_g, \qquad R_s = R_s^{sat}(p_o).
-\]
+$$
 
 The phase map is held fixed during one Newton solve and updated after convergence. This design is robust for a research framework and avoids introducing a full nonlinear complementarity formulation too early.
 
@@ -497,24 +497,24 @@ finite volume in space + fully implicit time integration + Newton-Raphson nonlin
 
 For each component and cell:
 
-\[
+$$
 R_i^{n+1} =
 \frac{A_i^{n+1}-A_i^n}{\Delta t}
 + \sum_j F_{ij}^{n+1}
 - Q_i^{n+1}.
-\]
+$$
 
 The nonlinear system is:
 
-\[
+$$
 \mathbf{R}(\mathbf{x}^{n+1}) = 0.
-\]
+$$
 
 The Newton correction solves:
 
-\[
+$$
 \mathbf{J}\Delta\mathbf{x} = -\mathbf{R}.
-\]
+$$
 
 The Step 7 implementation uses sparse finite-difference Jacobians with finite-volume stencil coloring. This is not as efficient as analytic assembly, but it exposes the correct structure and prepares the code for analytic or automatic-differentiated sparse assembly later.
 
@@ -524,9 +524,9 @@ The Step 7 implementation uses sparse finite-difference Jacobians with finite-vo
 
 The 3D grid is structured Cartesian. The flattened index is:
 
-\[
+$$
 cell(i,j,k)=kN_xN_y+jN_x+i.
-\]
+$$
 
 The permeability field is anisotropic:
 
