@@ -1,4 +1,4 @@
-# A Fully Implicit Finite-Volume Framework for Multiphase Black-Oil Flow in Porous Reservoirs                                  
+# A Fully Implicit Finite-Volume Framework for Multiphase Black-Oil Flow in Porous Reservoirs                                   
  
 This repository is a staged research-and-development framework for black-oil reservoir simulation. It was built progressively from a minimal finite-volume prototype into an integrated 3D live-oil black-oil simulator with phase switching, solution gas, gravity, capillary pressure, sparse nonlinear solvers, schedules, restarts, 3D reservoir-description tools, and ParaView-compatible visualization.
 
